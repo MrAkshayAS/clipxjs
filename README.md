@@ -31,5 +31,10 @@ Discover the ultimate in clipboard management with ClipX.js – a library design
 
 - **Broad Compatibility**:  
   Supports both modern and older browsers with fallback mechanisms, ensuring reliable clipboard operations across various environments.
+  
+### 4. Robust Error Handling
+
+- **Built-in Error Handling:**:  
+ clipx.js doesn't just fail silently. It provides clear error feedback through customizable toast notifications, making it easier to debug and improve user experience.
 
 ---
