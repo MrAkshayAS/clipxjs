@@ -8,33 +8,16 @@ Discover the ultimate in clipboard management with ClipX.js – a library design
 
 ## Why Choose ClipX.js?
 
-### 1. Lightweight with More Features
+### Lightweight & Fast
+- At only 2KB, ClipX.js is smaller and faster than most clipboard libraries.
+### Built-in Feedback
+- Includes customizable toast notifications for clipboard actions—no need for additional UI libraries.
+### Flexible Customization
+- Easily style toasts, control message display, and integrate seamlessly with your app's design.
+### Easy Integration
+- Simple API with minimal setup, ensuring broad compatibility across modern and older browsers.
+### Robust Error Handling
+- Provides clear, customizable error feedback to enhance user experience and simplify debugging.
 
-- **Size 2KB Only**:  
-  ClipX.js is smaller than most clipboard libraries, including clipboard.js, making it ideal for performance-conscious projects.
-
-- **Integrated Feedback System**:  
-  Unlike other libraries, ClipX.js comes with built-in toast notifications and customizable messages to inform users of successful or failed clipboard actions. No need to integrate additional libraries for basic UI feedback.
-
-### 2. Customization and Flexibility
-
-- **Customizable Toasts**:  
-  Style your toast notifications to match your application's design. Choose the position, duration, and even add custom styles effortlessly.
-
-- **Message Control**:  
-  Disable or modify the default "Copied!" message as needed, or show only the toast without altering the element's text content. This flexibility ensures ClipX.js fits seamlessly into your existing UI.
-
-### 3. Easy Integration
-
-- **Simple API**:  
-  ClipX.js is designed for ease of use, with a straightforward API that requires minimal setup. Attach clipboard functionality to any element with just a few lines of code.
-
-- **Broad Compatibility**:  
-  Supports both modern and older browsers with fallback mechanisms, ensuring reliable clipboard operations across various environments.
-  
-### 4. Robust Error Handling
-
-- **Built-in Error Handling:**:  
- clipx.js doesn't just fail silently. It provides clear error feedback through customizable toast notifications, making it easier to debug and improve user experience.
 
 ---
