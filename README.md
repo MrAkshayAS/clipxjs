@@ -1,8 +1,7 @@
 # ClipX.js -Maximize Clipboard Power with Minimal Size
 
-## The Smarter Clipboard Solution
 
-Discover the ultimate in clipboard management with ClipX.js – a library designed to deliver powerful clipboard functionality with a minimal footprint. At just 2KB, ClipX.js provides all the features you need while keeping your web applications fast and lightweight.
+ClipX.js is an ultra-light JavaScript library that simplifies clipboard tasks and enriches user feedback. It offers straightforward `copy, cut, and paste` capabilities,  and `built-in toast notifications` that you can easily customize, providing a quick and efficient way to handle clipboard and notification needs. ——— The Smarter Clipboard Solution.
 
 ---
 
