@@ -17,6 +17,30 @@ ClipX.js is an ultra-light JavaScript library that simplifies clipboard tasks an
 - Simple API with minimal setup, ensuring broad compatibility across modern and older browsers.
 ### Robust Error Handling
 - Provides clear, customizable error feedback to enhance user experience and simplify debugging.
-
-
+  
 ---
+
+## Installation
+
+### Via NPM
+
+```bash
+npm i clipx
+```
+### Via CDN 
+
+Use only one `CDN`
+
+**jsdelivr**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/clipx/dist/clipx.min.js"></script>
+```
+
+**OR**
+
+**unpkg**
+
+```html
+<script src="https://unpkg.com/clipx/dist/clipx.min.js"></script>
+```
