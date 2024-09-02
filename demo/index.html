@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipX &mdash; A Lightweight and Feature-Rich Clipboard Library for Copying and Cutting Text</title>
+    <meta name="description" content="ClipX is a lightweight, 2KB JavaScript clipboard library designed for easy copying and cutting of text. It eliminates the need for Flash, offers advanced customization, and provides stylish toast notifications, making it a versatile tool for modern web development.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ClipX &mdash; A Lightweight and Feature-Rich Clipboard Library for Copying and Cutting Text" />
+    <meta property="og:description" content="ClipX simplifies clipboard operations with a powerful, lightweight solution for copying and cutting text. It's flash-free, customizable, and perfect for modern web development with advanced features like custom toast notifications." />
+    <meta property="og:image" content="https://clipx.auss.in/path/to/clipx-image.png" />
+    <meta property="og:url" content="https://clipx.auss.in/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClipX &mdash; A Lightweight and Feature-Rich Clipboard Library for Copying and Cutting Text" />
+    <meta name="twitter:description" content="ClipX offers a lightweight, feature-rich solution for copying and cutting text. It's flash-free, customizable, and ideal for modern web development, complete with stylish toast notifications." />
+    <meta name="twitter:image" content="https://clipx.auss.in/path/to/clipx-image.png" />
+    
+    <!-- Keywords Meta Tag -->
+    <meta name="keywords" content="clipboard, JavaScript library, clipboard API, copy text, cut text, clipboard.js alternative, lightweight clipboard library, custom toast notifications, modern web development, flash-free clipboard solution, text copying, text cutting, web development tools, frontend development">
+    
+    <!-- Author Meta Tag -->
+    <meta name="author" content="AUSS" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clipx.auss.in/" />
+    
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
+    
+
+</head>
+
+<body>
+    <h1>clipx.js Enhanced Example</h1>
+
+    <!-- Section: Copy Input -->
+    <section>
+        <h2>Copy Input</h2>
+        <input id="inp" value="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+        <button class="clipx" data-clipx-target="#inp">Copy Input</button>
+    </section>
+
+    <!-- Section: Custom Messages -->
+    <section>
+        <h2>Custom Messages</h2>
+        <h1 id="foo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod eum quasi possimus autem nobis
+            voluptatibus? Voluptates aliquam similique, illum, in illo veritatis sunt, natus id eligendi voluptatum quae
+            necessitatibus.</h1>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-msg="Copied to clipboard!">Copy</button>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-msg="Copied to clipboard!" data-clipx-disable-msg>
+            Disable Text Content Change
+        </button>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-msg="Copied to clipboard!" data-clipx-disable-toast>
+            Disable Toast Notification
+        </button>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-disable-toast data-clipx-disable-msg>
+            Disable Both Text Content Change and Toast Notification
+        </button>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-toast-position="top">
+            Toast Notification Top
+        </button>
+        <button class="clipx" data-clipx-target="#foo" data-clipx-toast-position="top" data-clipx-duration="3000">
+            Duration 3 seconds
+        </button>
+    </section>
+
+    <!-- Section: Direct Text Copy -->
+    <section>
+        <h2>Direct Text Copy</h2>
+        <button data-clipx-text="This is a direct text copy" class="copy-btn">Copy Text</button>
+    </section>
+
+    <!-- Section: Cut Input -->
+    <section>
+        <h2>Cut Input</h2>
+        <input id="inp-cut" value="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+        <button class="clipx" data-clipx-target="#inp-cut" data-clipx-cut>Cut Input</button>
+    </section>
+
+    <!-- Section: Cut Examples -->
+    <section>
+        <h2>Cut Examples</h2>
+        <h1 id="foo-cut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam officia neque veniam nesciunt
+            quis aspernatur, exercitationem sequi consectetur ipsum error dignissimos qui tenetur animi. Quisquam labore
+            non nulla placeat quo.</h1>
+        <button class="clipx" data-clipx-target="#foo-cut" data-clipx-cut>Cut</button>
+
+        <h1 id="foo-cut2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam magni blanditiis voluptate
+            sint facilis temporibus laboriosam odit sequi molestiae, similique culpa, pariatur fugiat quae quod, natus
+            ipsam nemo quas itaque!</h1>
+        <button class="clipx" data-clipx-target="#foo-cut2" data-clipx-cut data-clipx-msg="Text Cut !" data-clipx-toast>
+            Only Toast
+        </button>
+    </section>
+
+    <script src="https://unpkg.com/clipx/dist/clipx.min.js"></script>
+    <script>
+        // Initialize clipx instance
+        var clipx = new clipx();
+
+        // Disable text content change globally
+        // If you want to prevent the text content of elements from changing globally, set this to true.
+        // Otherwise, set it to false to enable text content change.
+        clipx.disable.msg = false; // Change to true to disable text content change globally
+
+        // Disable toast notifications globally
+        // If you want to prevent toast notifications from showing globally, set this to true.
+        // Otherwise, set it to false to enable toast notifications.
+        clipx.disable.toast = false; // Change to true to disable toast notifications globally
+
+        // Set custom styles for toast notifications
+        // Customize the appearance of toast notifications by providing CSS styles.
+        // The example below sets a dark background with white text, padding, and rounded corners.
+        clipx.setCustomStyles({
+            toast: "background-color: #333; color: #fff; padding: 12px; border-radius: 5px;"
+        });
+
+        // Attach clipx functionality to elements matching the selectors
+        // The `attach` method binds clipx functionality to elements with the specified attributes or classes.
+        // Here, it is applied to elements with `data-clipx-text`, `data-clipx-target`, `clipx`, and `copy-btn` attributes/classes.
+        clipx.attach('[data-clipx-text], [data-clipx-target]');
+
+        // clipx.attach('.clipx, .copy-btn,.your-class'); // Uncomment this line if you want to use the class names.
+
+    </script>
+
+</body>
+
+</html>
