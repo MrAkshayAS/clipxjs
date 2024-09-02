@@ -4,7 +4,37 @@
 ClipX.js is an ultra-light JavaScript library that simplifies clipboard tasks and enriches user feedback. It offers straightforward `copy, cut, and paste` capabilities,  and `built-in toast notifications` that you can easily customize, providing a quick and efficient way to handle clipboard and notification needs. ——— The Smarter Clipboard Solution.
 
 ---
+## Table of Contents 📑
 
+1. [Why Choose ClipX.js?](#why-choose-clipxjs)
+   - [Lightweight & Fast](#lightweight--fast)
+   - [Built-in Feedback](#built-in-feedback)
+   - [Flexible Customization](#flexible-customization)
+   - [Easy Integration](#easy-integration)
+   - [Robust Error Handling](#robust-error-handling)
+2. [Installation](#installation)
+   - [Via NPM](#via-npm)
+   - [Via CDN](#via-cdn)
+3. [Initializing ClipX.js](#initializing-clipxjs)
+   - [Basic Initialization](#basic-initialization)
+   - [Configuration Options](#configuration-options)
+4. [Attaching ClipX Functionality](#attaching-clipx-functionality)
+   - [Example: Using Data Attributes](#example-using-data-attributes)
+   - [Example: Using Class Names](#example-using-class-names)
+5. [Attributes Overview](#attributes-overview)
+   - [`data-clipx-target`](#data-clipx-target)
+   - [`data-clipx-text`](#data-clipx-text)
+   - [`data-clipx-cut`](#data-clipx-cut)
+   - [`data-clipx-msg`](#data-clipx-msg)
+   - [`data-clipx-toast`](#data-clipx-toast)
+   - [`data-clipx-disable-msg`](#data-clipx-disable-msg)
+   - [`data-clipx-disable-toast`](#data-clipx-disable-toast)
+   - [`data-clipx-toast-position`](#data-clipx-toast-position)
+   - [`data-clipx-duration`](#data-clipx-duration)
+6. [Example](#example)
+7. [Demo](#demo)
+
+---
 ## Why Choose ClipX.js?
 
 ### Lightweight & Fast
