@@ -219,3 +219,37 @@ clipx.attach('.clipx, .copy-btn, .your-class');
 <button class="copy-btn" data-clipx-text="Text to copy" data-clipx-disable-toast data-clipx-duration="3000">Copy 3 sec Content Change</button>
 ```
 ---
+
+## Demo
+
+```html
+
+<h1>ClipX.js Demo</h1>
+
+<button class="copy-btn" data-clipx-text="Static text to copy" data-clipx-msg="Static text copied!">Copy Static Text</button>
+
+<button class="copy-btn" data-clipx-target="#text-to-copy" data-clipx-cut>Cut Text</button>
+<button class="copy-btn" data-clipx-target="#text-to-copy">Copy Text</button>
+
+<p id="text-to-copy">This text will be cut and copied to the clipboard.</p>
+
+<button class="copy-btn" data-clipx-text="Another static text" data-clipx-toast data-clipx-toast-position="bottom">Copy with Toast Only</button>
+
+<button class="copy-btn" data-clipx-text="Text with 5 seconds toast" data-clipx-toast data-clipx-duration="5000">Copy with 5 Seconds Toast</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipx/dist/clipx.min.js"></script>
+<script>
+    // Initialize ClipX.js instance
+    var clipx = new clipx();
+
+    // Optional: Set custom styles for toast notifications
+    clipx.setCustomStyles({
+        toast: "background-color: #333; color: #fff; padding: 12px; border-radius: 5px;"
+    });
+
+    // Attach ClipX.js functionality to elements
+    clipx.attach('[data-clipx-text], [data-clipx-target]');
+</script>
+
+```
