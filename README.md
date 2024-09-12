@@ -85,7 +85,7 @@ To get started with ClipX.js, follow these steps to set up and configure the lib
 ## Basic Initialization
 
 ```javascript
-// Initialize ClipX.js instance
+/* Initialize ClipX.js instance */
 var clipx = new clipx();
 ```
 
