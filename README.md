@@ -253,7 +253,7 @@ clipx.attach('.clipx, .copy-btn, .your-class');
 ```
 ---
 
-## Demo
+## Demo || Get Start Code
 
 ```html
 
