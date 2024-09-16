@@ -35,7 +35,7 @@ ClipX.js is an ultra-light JavaScript library that simplifies clipboard tasks an
    - [`data-clipx-toast-position`](#data-clipx-toast-position)
    - [`data-clipx-duration`](#data-clipx-duration)
 6. [Example](#example)
-7. [Demo](#demo)
+7. [Demo](#demo--get-start-code)
 
 ---
 ## Why Choose ClipX.js?
