@@ -131,7 +131,7 @@ clipx.attach('[data-clipx-text], [data-clipx-target]');
 
 ### Example: Using Class Names
 
-Alternatively, apply ClipX.js to elements with specific classes. Uncomment the following line if you prefer using class names.
+Alternatively, apply ClipX.js to elements with specific classes.
 
 ```javascript
 clipx.attach('.clipx, .copy-btn, .your-class');
