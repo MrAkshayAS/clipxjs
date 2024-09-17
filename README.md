@@ -1,5 +1,5 @@
 ![License](https://img.shields.io/badge/License-MIT-ff932e)
-![Release](https://img.shields.io/github/v/release/MrAkshayAS/clipx?color=ff7a5e)
+![Release](https://img.shields.io/github/v/release/MrAkshayAS/clipxjs?color=ff7a5e)
 
 # ClipX.js -Maximize Clipboard Power with Minimal Size
 
@@ -63,7 +63,7 @@ For more information about this project, please visit our official website: [Cli
 ### Via NPM
 
 ```bash
-npm i clipx
+npm i clipxjs
 ```
 ### Via CDN 
 
@@ -72,7 +72,7 @@ Use only one `CDN`
 **jsdelivr**
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/clipx/dist/clipx.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipxjs/dist/clipx.min.js"></script>
 ```
 
 **OR**
@@ -80,7 +80,7 @@ Use only one `CDN`
 **unpkg**
 
 ```html
-<script src="https://unpkg.com/clipx/dist/clipx.min.js"></script>
+<script src="https://unpkg.com/clipxjs/dist/clipx.min.js"></script>
 ```
 ---
 ## Initializing ClipX.js
@@ -276,7 +276,7 @@ clipx.attach('.clipx, .copy-btn, .your-class');
 <button class="copy-btn" data-clipx-text="Text with 5 seconds toast" data-clipx-toast data-clipx-duration="5000">Copy with 5 Seconds Toast</button>
 
 
-<script src="https://cdn.jsdelivr.net/npm/clipx/dist/clipx.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipxjs/dist/clipx.min.js"></script>
 <script>
     // Initialize ClipX.js instance
     var clipx = new clipx();
