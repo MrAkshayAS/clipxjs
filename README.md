@@ -7,6 +7,11 @@
 ClipX.js is an ultra-light JavaScript library that simplifies clipboard tasks and enriches user feedback. It offers straightforward `copy, cut, and paste` capabilities,  and `built-in toast notifications` that you can easily customize, providing a quick and efficient way to handle clipboard and notification needs. ——— The Smarter Clipboard Solution.
 
 ---
+## Official Website
+
+For more information about this project, please visit our official website: [ClipX](https://clipx.dzr.app/)
+
+---
 ## Table of Contents 📑
 
 1. [Why Choose ClipX.js?](#why-choose-clipxjs)
